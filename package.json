@@ -1,25 +1,7 @@
 {
-  "name": "intro",
-  "version": "0.1.0",
-  "description": "Short introduction to Lab and Hapi",
-  "main": "index.js",
   "scripts": {
     "test": "lab -cLv -t 100",
     "start": "node ./index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leanhubIo/intro.git"
-  },
-  "author": "vdeturckheim",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leanhubIo/intro/issues"
-  },
-  "homepage": "https://github.com/leanhubIo/intro#readme",
-  "private": true,
-  "engines": {
-    "node": ">=5.0.0"
   },
   "dependencies": {
     "hapi": "^13.0.0",
