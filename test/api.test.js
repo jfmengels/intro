@@ -36,7 +36,7 @@ lab.test('Ensure that the server exists', (done) => {
 
 lab.test('Simply test the unique route', (done) => {
 
-    // What we will inject into the server
+    // What we will inject in the server
     const toInject = {
         method: 'POST',
         url: '/hello?item=10',
@@ -44,7 +44,7 @@ lab.test('Simply test the unique route', (done) => {
     };
 
     getServer()
-        // Inject let us pass a request to the server event if it is not started
+        // inject lets us pass a request to the server event if it is not started
         .then((server) => server.inject(toInject))
         // The server's response is given in a promise (or a callback if we wanted)
         .then((response) => {
@@ -72,12 +72,12 @@ lab.test('Simple example of a bad request', (done) => {
     // What we will inject into the server
     const toInject = {
         method: 'POST',
-        url: '/hello?item=101', // 101 > 100, this will fail !!
+        url: '/hello?item=101', // 101 > 100, this will fail!
         payload: { alive: true }
     };
 
     getServer()
-    // Inject let us pass a request to the server event if it is not started
+    // Inject lets us pass a request to the server event if it is not started
         .then((server) => server.inject(toInject))
         // The server's response is given in a promise (or a callback if we wanted)
         .then((response) => {

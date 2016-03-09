@@ -14,7 +14,7 @@ const myRoute = {
         validate: {
             // for url parameters
             params: {
-                // 'paramater' cannot be longer than 10
+                // 'parameter' cannot be longer than 10 characters
                 parameter: Joi.string().max(10).required()
             },
             // for query string
@@ -44,7 +44,7 @@ const myPlugin = {
     // method that will be called to register the plugin
     register: function (server, options, next) {
 
-        // add the route a a route for the server
+        // add the route to the server
         server.route(myRoute);
         // registration is done, let the framework take over again
         next();

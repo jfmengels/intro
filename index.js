@@ -15,8 +15,7 @@ server.connection({
 server.register(ApiPlugin)
     // start the server
     .then(() => server.start())
-    // If th server is correctely started, we log it
+    // If the server is correctely started, we log it
     .then(() => console.log(`Server running at: ${server.info.uri}`))
     // If something wrong happens, we log it
     .catch(console.log);
-
